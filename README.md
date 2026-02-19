@@ -1,6 +1,33 @@
-# System-wide AI-assisted Input Method for Portuguese (PT-BR IME)
+# 🐉 Autocorretor PT-BR (O Dragão)
 
-Este projeto implementa um Input Method Editor (IME) avançado para Windows, focado na correção e previsão de texto em Português do Brasil utilizando inteligência artificial.
+```text
+                \||/
+                |  @___oo
+      /\  /\   / (__,,,,|
+     ) /^\) ^\/ _)
+     )   /^\/   _)
+     )   _ /  / _)
+ /\  )/\/ ||  | )_)
+<  >      |(,,) )__)
+ ||      /    \)___)\
+ | \____(      )___) )___
+ \______(_______;;; __;;;
+```
+
+Este projeto implementa um **Input Method Editor (IME)** avançado para Windows, focado na correção e previsão de texto em Português do Brasil utilizando inteligência artificial.
+
+## 🧬 Anatomia do Dragão (Estrutura do Projeto)
+
+Para entender como este sistema funciona, imagine-o como um organismo vivo:
+
+*   **🐲 A Cabeça (Interface):** `crates/tray-app`
+    *   É o que você vê. Fica na bandeja do sistema (perto do relógio), observando e permitindo interações.
+*   **🧠 O Cérebro (IA):** `crates/correction-engine`
+    *   Onde a mágica acontece. Processa o texto, prevê o que você quer dizer e corrige seus erros usando modelos de Inteligência Artificial.
+*   **🦴 O Corpo (Sistema):** `crates/ime-core`
+    *   A estrutura que se conecta profundamente ao Windows. É a DLL que o sistema operacional carrega para interceptar e enviar o texto.
+*   **🦅 As Garras (Instalador):** `crates/installer`
+    *   Agarra o sistema para garantir que tudo fique no lugar certo. Instala, registra e fixa o dragão no seu computador.
 
 ## 📋 Visão Geral
 

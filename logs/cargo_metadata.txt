@@ -1,0 +1,67 @@
+﻿cargo : error: 
+failed to select a 
+version for `ort`.
+No linha:1 
+caractere:1
++ cargo metadata 
+--format-version 1 
+2>&1 | Out-File 
+-Encoding utf8 carg 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (error:    
+ failed t...sion     
+for `ort`.:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+    ... required by 
+package 
+`correction-engine 
+v0.1.0 (C:\Users\fabi
+a\OneDrive\Documentos
+\System-wide 
+AI-assisted Input 
+Method for 
+Portuguese (PT-BR IME
+)\crates\correction-e
+ngine)`
+    ... which 
+satisfies path 
+dependency 
+`correction-engine` 
+(locked to 0.1.0) of 
+package `ime-core 
+v0.1.0 (C:\Users\fabi
+a\OneDrive\Documentos
+\System-wide 
+AI-assisted Input 
+Method for 
+Portuguese (PT-BR IME
+)\crates\ime-core)`
+versions that meet 
+the requirements 
+`^2.0.0-rc.11` 
+(locked to 
+2.0.0-rc.11) are: 
+2.0.0-rc.11
+
+package 
+`correction-engine` 
+depends on `ort` 
+with feature 
+`static` but `ort` 
+does not have that 
+feature.
+
+
+failed to select a 
+version for `ort` 
+which could resolve 
+this conflict
