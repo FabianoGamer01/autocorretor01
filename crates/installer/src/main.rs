@@ -18,6 +18,7 @@ use windows::Win32::UI::Shell::{
 // NOTA: Os arquivos devem existir em target/release antes de compilar este crate.
 const TRAY_APP_BYTES: &[u8] = include_bytes!("../../../target/release/tray-app.exe");
 const IME_DLL_BYTES: &[u8] = include_bytes!("../../../target/release/ime_core.dll");
+const DIRECTML_BYTES: &[u8] = include_bytes!("../../../target/release/DirectML.dll");
 
 fn main() {
     // 1. Verificar privilégios de administrador
@@ -49,6 +50,9 @@ fn main() {
     println!("Copiando arquivos...");
     fs::write(&tray_path, TRAY_APP_BYTES).expect("Falha ao escrever tray-app.exe");
     fs::write(&dll_path, IME_DLL_BYTES).expect("Falha ao escrever ime_core.dll");
+
+    let directml_path = install_dir.join("DirectML.dll");
+    fs::write(&directml_path, DIRECTML_BYTES).expect("Falha ao escrever DirectML.dll");
 
     // 5. Registrar DLL
     println!("Registrando IME...");

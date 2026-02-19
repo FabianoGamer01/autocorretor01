@@ -39,6 +39,7 @@ Este guia explica como publicar uma nova versão do **Autocorretor PT-BR** para 
     *   `InstaladorAutocorretor.exe` (O instalador único que criamos).
     *   `target/release/autocorretor-tray.exe` (Para o script PowerShell).
     *   `target/release/ime_core.dll` (Para o script PowerShell).
+    *   `target/release/DirectML.dll` (Essencial para a IA funcionar).
 
     > **Nota**: O script `install.ps1` que colocamos no README procura por arquivos com nomes específicos. Se você anexar `autocorretor-tray.exe` e `ime_core.dll`, o script funcionará perfeitamente para quem não quiser baixar o `.exe`. Mas o `InstaladorAutocorretor.exe` é a forma mais fácil para usuários finais.
 
