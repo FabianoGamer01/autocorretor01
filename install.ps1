@@ -1,8 +1,5 @@
-# PT-BR AI IME - Instalador Web
-# Este script baixa e instala a última versão do Autocorretor
-
 param(
-    [string]$InstallPath = "$env:ProgramFiles\AutocorretorPTBR",
+    [string]$InstallPath = "$env:USERPROFILE\Downloads\AutocorretorPTBR",
     [string]$RepoOwner = "FabianoGamer01",
     [string]$RepoName = "autocorretor01",
     [switch]$SkipAdmin,

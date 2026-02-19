@@ -31,10 +31,11 @@ fn main() {
 
     println!("Iniciando instalação do Autocorretor PT-BR...");
 
-    // 2. Definir diretórios de instalação
-    let program_files = unsafe { get_special_folder(CSIDL_PROGRAM_FILES) }
-        .expect("Não foi possível localizar Program Files");
-    let install_dir = PathBuf::from(program_files).join("AutocorretorPTBR");
+    // 2. Definir diretórios de instalação (Agora em Downloads)
+    let user_profile = env::var("USERPROFILE").expect("Não foi possível localizar USERPROFILE");
+    let install_dir = PathBuf::from(user_profile)
+        .join("Downloads")
+        .join("AutocorretorPTBR");
 
     if !install_dir.exists() {
         fs::create_dir_all(&install_dir).expect("Falha ao criar diretório de instalação");
