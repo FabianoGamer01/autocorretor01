@@ -19,8 +19,8 @@ git add .
 git status
 
 echo.
-set /p COMMIT_MSG="Digite a mensagem do commit (Pressione Enter para usar 'Atualizacao automatica'): "
-if "%COMMIT_MSG%"=="" set COMMIT_MSG="Atualizacao automatica em %date% %time%"
+set /p "COMMIT_MSG=Digite a mensagem do commit (Pressione Enter para usar 'Atualizacao automatica'): "
+if "%COMMIT_MSG%"=="" set "COMMIT_MSG=Atualizacao automatica em %date% %time%"
 
 echo.
 echo Realizando commit: "%COMMIT_MSG%"

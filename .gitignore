@@ -11,7 +11,14 @@ target/
 build_*.txt
 test_*.txt
 check_*.txt
+bench_*.txt
+manual_*.txt
 *.log
+*.tmp
+
+# User data
+data/*.user
+data/*.bak
 
 # Editor settings
 .vscode/
