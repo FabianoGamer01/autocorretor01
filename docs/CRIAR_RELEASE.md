@@ -37,11 +37,11 @@ Este guia explica como publicar uma nova versão do **Autocorretor PT-BR** para 
     Arraste e solte os seguintes arquivos para a área **"Attach binaries by dropping them here..."**:
     
     *   `InstaladorAutocorretor.exe` (O instalador único que criamos).
-    *   `target/release/autocorretor-tray.exe` (Para o script PowerShell).
-    *   `target/release/ime_core.dll` (Para o script PowerShell).
+    *   `target/release/draco_head.exe` (Para o script PowerShell).
+    *   `target/release/draco_body.dll` (Para o script PowerShell).
     *   `target/release/DirectML.dll` (Essencial para a IA funcionar).
 
-    > **Nota**: O script `install.ps1` que colocamos no README procura por arquivos com nomes específicos. Se você anexar `autocorretor-tray.exe` e `ime_core.dll`, o script funcionará perfeitamente para quem não quiser baixar o `.exe`. Mas o `InstaladorAutocorretor.exe` é a forma mais fácil para usuários finais.
+    > **Nota**: O script `install.ps1` que colocamos no README procura por arquivos com nomes específicos (`draco_head.exe` e `draco_body.dll`). Se você anexar estes arquivos, o script funcionará perfeitamente para quem não quiser baixar o instalador completo.
 
 6.  **Publicar**:
     Se for uma versão de teste, marque a caixa **"Set as a pre-release"**.
@@ -51,4 +51,4 @@ Este guia explica como publicar uma nova versão do **Autocorretor PT-BR** para 
 
 Após publicar:
 1.  Copie o link do `InstaladorAutocorretor.exe` na página da release e envie para seus amigos.
-2.  Ou peça para eles rodarem o comando do PowerShell que está no README. Ele vai baixar automaticamente os arquivos `autocorretor-tray.exe` e `ime_core.dll` dessa release.
+2.  Ou peça para eles rodarem o comando do PowerShell que está no README. Ele vai baixar automaticamente os arquivos `draco_head.exe` (Cabeça) e `draco_body.dll` (Corpo) dessa release.
