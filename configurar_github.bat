@@ -57,7 +57,7 @@ if %errorlevel% neq 0 (
 )
 
 echo.
-echoAdicionando arquivos...
+echo Adicionando arquivos...
 git add .
 
 echo.
