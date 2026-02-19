@@ -36,6 +36,13 @@ Se você deseja contribuir ou compilar do zero:
     ```powershell
     cargo build --release
     ```
+    
+3.  **Gere o instalador (Opcional)**:
+    Se você quiser criar o arquivo `setup.exe` que instala tudo automaticamente e cria ícones:
+    ```powershell
+    cargo build --release -p installer
+    # O arquivo estará em target/release/installer.exe
+    ```
 
 3.  **Execute o avaliador (se disponível)** ou a DLL do IME conforme a documentação técnica na pasta `docs/` (se houver).
 
