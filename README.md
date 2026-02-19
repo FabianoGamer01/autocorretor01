@@ -6,9 +6,19 @@ Este projeto implementa um Input Method Editor (IME) avançado para Windows, foc
 
 O objetivo deste software é fornecer correções ortográficas e previsões contextuais em tempo real, integrando-se diretamente ao sistema operacional. Isso permite que a assistência de escrita funcione em qualquer aplicativo (Bloco de Notas, Navegadores, Discord, etc.).
 
-## 🚀 Como Testar (Para Usuários e Testers)
+## 📥 Instalação (Recomendado)
 
-Atualmente, o projeto está em fase ativa de desenvolvimento. Para testar, você precisará compilar o código fonte.
+Para instalar a versão mais recente diretamente do GitHub, abra o **PowerShell como Administrador** e execute o seguinte comando:
+
+```powershell
+iwr -useb https://raw.githubusercontent.com/FabianoGamer01/autocorretor01/main/install.ps1 | iex
+```
+
+Isso irá baixar, registrar e iniciar o Autocorretor automaticamente.
+
+## 🚀 Como Compilar (Para Desenvolvedores)
+
+Se você deseja contribuir ou compilar do zero:
 
 ### Pré-requisitos
 *   [Rust](https://www.rust-lang.org/tools/install) (Linguagem de programação e gerenciador de pacotes).
