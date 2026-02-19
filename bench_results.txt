@@ -1,0 +1,70 @@
+﻿cargo :    Compiling 
+proc-macro2 v1.0.106
+No linha:1 
+caractere:1
++ cargo bench -p 
+correction-engine 
+2>&1 | Out-File 
+-Encoding utf8 bench 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (   Comp   
+ iling proc-macro    
+2 v1.0.106:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+   Compiling 
+unicode-ident v1.0.24
+   Compiling quote 
+v1.0.44
+   Compiling autocfg 
+v1.5.0
+   Compiling 
+serde_core v1.0.228
+   Compiling 
+zerocopy v0.8.39
+   Compiling cfg-if 
+v1.0.4
+   Compiling 
+crossbeam-utils 
+v0.8.21
+   Compiling 
+find-msvc-tools 
+v0.1.9
+   Compiling memchr 
+v2.8.0
+error: failed to 
+remove C:\Users\fabia
+\OneDrive\Documentos\
+System-wide 
+AI-assisted Input 
+Method for 
+Portuguese (PT-BR IME
+)\target\release\buil
+d\proc-macro2-5cd3a11
+d78e620d0\build_scrip
+t_build-5cd3a11d78e62
+0d0.build_script_buil
+d.602a26ec072d5056-cg
+u.1.rcgu.o: O 
+arquivo j├í est├í 
+sendo usado por 
+outro processo. (os 
+error 32)
+
+error: could not 
+compile 
+`proc-macro2` (build 
+script) due to 1 
+previous error
+warning: build 
+failed, waiting for 
+other jobs to 
+finish...

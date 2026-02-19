@@ -1,0 +1,19 @@
+# Rust build artifacts
+target/
+**/*.rs.bk
+*.pdb
+*.exe
+*.dll
+*.lib
+*.obj
+
+# Logs and temporary files
+build_*.txt
+test_*.txt
+check_*.txt
+*.log
+
+# Editor settings
+.vscode/
+.idea/
+*.iml

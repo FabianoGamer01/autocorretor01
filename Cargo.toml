@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "crates/ime-core",
+    "crates/correction-engine",
+    "crates/tray-app",
+    "crates/installer",
+]
+resolver = "2"
+
+# Patch da esaxx-rs: remove static_crt(true) do build.rs para resolver
+# o conflito CRT /MT vs /MD com os binários pré-compilados do ort (ONNX Runtime).
+[patch.crates-io]
+esaxx-rs = { path = "crates/third_party/esaxx-rs" }

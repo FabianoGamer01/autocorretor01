@@ -1,0 +1,8 @@
+# .cargo/config.toml — Configuração de build do workspace PT-BR IME
+
+[target.x86_64-pc-windows-msvc]
+# Garante CRT dinâmico (/MD) em Release para compatibilidade com os binários
+# pré-compilados do ONNX Runtime (ort crate), que são linkados com /MD.
+# O patch local da esaxx-rs (crates/third_party/esaxx-rs) remove o static_crt(true)
+# do build.rs original, eliminando o conflito /MT vs /MD.
+rustflags = ["-C", "target-feature=-crt-static"]

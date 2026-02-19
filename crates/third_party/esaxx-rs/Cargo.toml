@@ -1,0 +1,16 @@
+[package]
+name = "esaxx-rs"
+version = "0.1.10"
+authors = ["Nicolas Patry <patry.nicolas@protonmail.com>"]
+edition = "2018"
+description = "Wrapping around sentencepiece's esaxxx library. (patched: CRT /MD)"
+license = "Apache-2.0"
+
+[dependencies]
+
+[build-dependencies]
+cc = { version = "1.0", optional = true }
+
+[features]
+default = ["cpp"]
+cpp = ["cc"]

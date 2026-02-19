@@ -1,0 +1,33 @@
+﻿PT-BR AI IME - Instalador do Sistema
+------------------------------------
+Localizado: "C:\\Users\\fabia\\AppData\\Local\\Temp\\rust-target\\release\\ime_core.dll"
+Registrando componente COM e TSF...
+C:\Users\fabia\AppDat
+a\Local\Temp\rust-tar
+get\release\installer
+.exe : ERRO: Falha 
+ao registrar a DLL. 
+Certifique-se de 
+executar como 
+ADMINISTRADOR.
+No linha:1 
+caractere:93
++ ... \installer; C:\
+Users\fabia\AppData\L
+ocal\Temp\rust-target
+\release\ins ...
++                 ~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (ERRO: F   
+ alha ao ... ADMI    
+NISTRADOR.:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 

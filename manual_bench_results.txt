@@ -1,0 +1,59 @@
+﻿cargo :    Compiling 
+correction-engine 
+v0.1.0 (C:\Users\fabi
+a\OneDrive\Documentos
+\System-wide 
+AI-assisted Input 
+Method for 
+Portuguese (PT-BR IME
+)\crates\correction-e
+ngine)
+No linha:1 
+caractere:1
++ cargo test -p 
+correction-engine -- 
+--nocapture 2>&1 | 
+Out-File -Encod ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (   Comp   
+ iling co...recti    
+on-engine):Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+    Finished `test` 
+profile [unoptimized 
++ debuginfo] 
+target(s) in 1.75s
+     Running 
+unittests src\lib.rs 
+(target\debug\deps\co
+rrection_engine-0ecc0
+3d35118ffaf.exe)
+
+running 2 tests
+test validation::tests::test_stage_a_precision ... ok
+
+--- Stage A Benchmark ---
+M├®dia de lat├¬ncia: 27.3020 ┬Ás por palavra
+Total para 10000 itera├º├Áes: 273.0204ms
+-------------------------
+
+test validation::tests::benchmark_stage_a_latency ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.27s
+
+   Doc-tests 
+correction_engine
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
