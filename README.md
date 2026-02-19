@@ -1,35 +1,47 @@
 # System-wide AI-assisted Input Method for Portuguese (PT-BR IME)
 
-Este projeto implementa um método de entrada de texto (IME) assistido por IA para o Windows, focado na correção e previsão de texto em Português do Brasil.
+Este projeto implementa um Input Method Editor (IME) avançado para Windows, focado na correção e previsão de texto em Português do Brasil utilizando inteligência artificial.
 
-## 🚀 Como Baixar e Testar
+## 📋 Visão Geral
 
-Para testar a versão mais recente deste projeto:
+O objetivo deste software é fornecer correções ortográficas e previsões contextuais em tempo real, integrando-se diretamente ao sistema operacional. Isso permite que a assistência de escrita funcione em qualquer aplicativo (Bloco de Notas, Navegadores, Discord, etc.).
 
-1.  **Acesse o Repositorio**: [GitHub - autocorretor01](https://github.com/FabianoGamer01/autocorretor01)
-2.  Clique no botão verde **Code** no topo da lista de arquivos.
-3.  Selecione **Download ZIP**.
-4.  Extraia o arquivo ZIP em seu computador.
+## 🚀 Como Testar (Para Usuários e Testers)
 
-## 🛠️ Como Usar o Projeto (Desenvolvedores)
+Atualmente, o projeto está em fase ativa de desenvolvimento. Para testar, você precisará compilar o código fonte.
 
-### Configuração Inicial
+### Pré-requisitos
+*   [Rust](https://www.rust-lang.org/tools/install) (Linguagem de programação e gerenciador de pacotes).
+*   Windows 10 ou 11.
 
-1.  Certifique-se de ter o [Rust](https://www.rust-lang.org/tools/install) instalado.
-2.  Execute o script de configuração inicial:
+### Instalação e Execução
+
+1.  **Clone o repositório**:
     ```powershell
-    .\configurar_github.bat
+    git clone https://github.com/FabianoGamer01/autocorretor01.git
+    cd autocorretor01
     ```
 
-### Sincronização
+2.  **Compile o projeto**:
+    ```powershell
+    cargo build --release
+    ```
 
-Para enviar suas alterações para o GitHub, utilize o script automatizado:
-```powershell
-.\enviar_para_github.bat
-```
+3.  **Execute o avaliador (se disponível)** ou a DLL do IME conforme a documentação técnica na pasta `docs/` (se houver).
 
-## 📝 Funcionalidades
+## 🛠️ Para Desenvolvedores
 
-- Correção ortográfica em tempo real.
-- Integração com o sistema operacional Windows via IME.
-- Suporte a acentuação e caracteres especiais do PT-BR.
+Se você deseja contribuir com o código:
+
+1.  Faça um **Fork** deste repositório.
+2.  Crie uma branch para sua funcionalidade (`git checkout -b feature/nova-funcionalidade`).
+3.  Faça commit de suas alterações.
+4.  Faça o push para a branch.
+5.  Abra um **Pull Request**.
+
+## 🔒 Privacidade e Segurança
+
+Este software processa o texto localmente para fornecer correções. Nenhuma informação de digitação é enviada para servidores externos sem o consentimento explícito do usuário.
+
+---
+*Desenvolvido com foco em performance e privacidade.*
