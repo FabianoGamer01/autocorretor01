@@ -181,19 +181,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "773648b94d0e5d620f64f280777445740e61fe701025087ec8b57f45c791888b"
 
 [[package]]
-name = "correction-engine"
-version = "0.1.0"
-dependencies = [
- "criterion",
- "ort",
- "serde",
- "serde_json",
- "tokenizers",
- "tokio",
- "unicode-segmentation",
-]
-
-[[package]]
 name = "criterion"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -334,6 +321,47 @@ checksum = "ab63b0e2bf4d5928aff72e83a7dace85d7bba5fe12dcc3c5a572d78caffd3f3c"
 dependencies = [
  "derive_builder_core",
  "syn",
+]
+
+[[package]]
+name = "draco_body"
+version = "0.1.0"
+dependencies = [
+ "draco_brain",
+ "serde",
+ "serde_json",
+ "tokio",
+ "windows 0.52.0",
+ "windows-core 0.58.0",
+]
+
+[[package]]
+name = "draco_brain"
+version = "0.1.0"
+dependencies = [
+ "criterion",
+ "ort",
+ "serde",
+ "serde_json",
+ "tokenizers",
+ "tokio",
+ "unicode-segmentation",
+]
+
+[[package]]
+name = "draco_claws"
+version = "0.1.0"
+dependencies = [
+ "windows 0.58.0",
+]
+
+[[package]]
+name = "draco_head"
+version = "0.1.0"
+dependencies = [
+ "draco_brain",
+ "windows 0.52.0",
+ "winresource",
 ]
 
 [[package]]
@@ -507,18 +535,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b9e0384b61958566e926dc50660321d12159025e767c18e043daf26b70104c39"
 
 [[package]]
-name = "ime-core"
-version = "0.1.0"
-dependencies = [
- "correction-engine",
- "serde",
- "serde_json",
- "tokio",
- "windows 0.52.0",
- "windows-core 0.58.0",
-]
-
-[[package]]
 name = "indexmap"
 version = "2.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -541,13 +557,6 @@ dependencies = [
  "portable-atomic",
  "unicode-width",
  "web-time",
-]
-
-[[package]]
-name = "installer"
-version = "0.1.0"
-dependencies = [
- "windows 0.58.0",
 ]
 
 [[package]]
@@ -1449,15 +1458,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "db97caf9d906fbde555dd62fa95ddba9eecfd14cb388e4f491a66d74cd5fb79a"
 dependencies = [
  "once_cell",
-]
-
-[[package]]
-name = "tray-app"
-version = "0.1.0"
-dependencies = [
- "correction-engine",
- "windows 0.52.0",
- "winresource",
 ]
 
 [[package]]

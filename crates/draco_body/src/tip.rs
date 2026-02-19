@@ -2,7 +2,7 @@ use windows::core::*;
 use windows::Win32::Foundation::*;
 use windows::Win32::UI::TextServices::*;
 
-use correction_engine::stage_a::StageA;
+use draco_brain::stage_a::StageA;
 use std::sync::{Arc, Mutex};
 
 #[implement(ITfTextInputProcessor, ITfTextInputProcessorEx)]
@@ -68,7 +68,7 @@ impl ITfTextInputProcessorEx_Impl for PtBrTip {
         // Log para debug
         if dict_path.exists() {
             if let Ok(words) =
-                correction_engine::dict_loader::load_from_file(dict_path.to_str().unwrap_or(""))
+                draco_brain::dict_loader::load_from_file(dict_path.to_str().unwrap_or(""))
             {
                 engine.load_dictionary_strings(&words);
             }

@@ -1,4 +1,4 @@
-use correction_engine::stage_a::StageA;
+use draco_brain::stage_a::StageA;
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
 
 fn bench_latency(c: &mut Criterion) {

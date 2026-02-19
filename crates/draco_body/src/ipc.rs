@@ -15,7 +15,7 @@ pub enum IpcCommand {
 }
 
 pub async fn start_ipc_server(
-    engine: std::sync::Arc<std::sync::Mutex<correction_engine::stage_a::StageA>>,
+    engine: std::sync::Arc<std::sync::Mutex<draco_brain::stage_a::StageA>>,
 ) {
     if STARTED.swap(true, Ordering::SeqCst) {
         return;

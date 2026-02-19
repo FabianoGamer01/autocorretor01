@@ -1,5 +1,5 @@
 [package]
-name = "correction-engine"
+name = "draco_brain"
 version = "0.1.0"
 edition = "2021"
 

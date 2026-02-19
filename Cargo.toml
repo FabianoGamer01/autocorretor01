@@ -1,9 +1,9 @@
 [workspace]
 members = [
-    "crates/ime-core",
-    "crates/correction-engine",
-    "crates/tray-app",
-    "crates/installer",
+    "crates/draco_body",
+    "crates/draco_brain",
+    "crates/draco_head",
+    "crates/draco_claws",
 ]
 resolver = "2"
 

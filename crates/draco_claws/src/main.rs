@@ -16,8 +16,8 @@ use windows::Win32::UI::Shell::{
 
 // Incorporar os binários compilados diretamente no executável final
 // NOTA: Os arquivos devem existir em target/release antes de compilar este crate.
-const TRAY_APP_BYTES: &[u8] = include_bytes!("../../../target/release/tray-app.exe");
-const IME_DLL_BYTES: &[u8] = include_bytes!("../../../target/release/ime_core.dll");
+const TRAY_APP_BYTES: &[u8] = include_bytes!("../../../target/release/draco_head.exe");
+const IME_DLL_BYTES: &[u8] = include_bytes!("../../../target/release/draco_body.dll");
 const DIRECTML_BYTES: &[u8] = include_bytes!("../../../target/release/DirectML.dll");
 
 fn main() {
@@ -40,16 +40,16 @@ fn main() {
         fs::create_dir_all(&install_dir).expect("Falha ao criar diretório de instalação");
     }
 
-    let tray_path = install_dir.join("autocorretor-tray.exe");
-    let dll_path = install_dir.join("ime_core.dll");
+    let tray_path = install_dir.join("draco_head.exe");
+    let dll_path = install_dir.join("draco_body.dll");
 
     // 3. Parar processos existentes
-    kill_process("autocorretor-tray.exe");
+    kill_process("draco_head.exe");
 
     // 4. Copiar arquivos
     println!("Copiando arquivos...");
-    fs::write(&tray_path, TRAY_APP_BYTES).expect("Falha ao escrever tray-app.exe");
-    fs::write(&dll_path, IME_DLL_BYTES).expect("Falha ao escrever ime_core.dll");
+    fs::write(&tray_path, TRAY_APP_BYTES).expect("Falha ao escrever draco_head.exe");
+    fs::write(&dll_path, IME_DLL_BYTES).expect("Falha ao escrever draco_body.dll");
 
     let directml_path = install_dir.join("DirectML.dll");
     fs::write(&directml_path, DIRECTML_BYTES).expect("Falha ao escrever DirectML.dll");

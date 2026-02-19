@@ -11,12 +11,12 @@ use windows::Win32::UI::WindowsAndMessaging::*;
 
 fn main() -> Result<()> {
     // 1. Inicializar engine de correção
-    let mut engine = correction_engine::stage_a::StageA::new();
+    let mut engine = draco_brain::stage_a::StageA::new();
 
     // 2. Carregar dados de FREQUÊNCIA primeiro (para que o dicionário já tenha os ranks)
     let freq_path = resolve_freq_path();
     if freq_path.exists() {
-        if let Ok(entries) = correction_engine::dict_loader::load_frequency_file(&freq_path) {
+        if let Ok(entries) = draco_brain::dict_loader::load_frequency_file(&freq_path) {
             eprintln!(
                 "[IME] Frequências carregadas: {} palavras de {:?}",
                 entries.len(),
@@ -29,7 +29,7 @@ fn main() -> Result<()> {
     // 3. Carregar dicionário
     let dict_path = resolve_dict_path();
     if dict_path.exists() {
-        if let Ok(words) = correction_engine::dict_loader::load_from_file(&dict_path) {
+        if let Ok(words) = draco_brain::dict_loader::load_from_file(&dict_path) {
             engine.load_dictionary_strings(&words);
             eprintln!(
                 "[IME] Dicionário carregado: {} palavras de {:?}",

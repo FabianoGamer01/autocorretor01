@@ -50,11 +50,13 @@ try {
     # Ajuste manual necessário aqui se os nomes dos assets mudarem.
     
     $baseUrl = "https://github.com/FabianoGamer01/autocorretor01/releases/latest/download"
-    $trayExeName = "autocorretor-tray.exe"
-    $dllName = "ime_core.dll"
+    $trayExeName = "draco_head.exe"
+    $dllName = "draco_body.dll"
+    $directmlName = "DirectML.dll"
 
     $trayUrl = "$baseUrl/$trayExeName"
     $dllUrl = "$baseUrl/$dllName"
+    $directmlUrl = "$baseUrl/$directmlName"
 
     Write-Host "Baixando arquivos..."
     
@@ -104,6 +106,14 @@ try {
     }
     else {
         Download-File -Url $dllUrl -Dest "$InstallPath\$dllName"
+    }
+
+    if (Test-Path "target\release\$directmlName") {
+        Write-Host "Encontrado build local (Release): $directmlName"
+        Copy-Item "target\release\$directmlName" "$InstallPath\$directmlName" -Force
+    }
+    else {
+        Download-File -Url $directmlUrl -Dest "$InstallPath\$directmlName"
     }
 
     # 4. Registrar a DLL
